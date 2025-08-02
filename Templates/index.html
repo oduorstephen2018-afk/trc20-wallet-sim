@@ -1,39 +1,12 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TRC20 Wallet (Simulated)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .wallet {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .balance {
-            font-size: 48px;
-            color: green;
-        }
-        .warning {
-            font-size: 14px;
-            color: red;
-        }
-    </style>
+  <title>TRC20 Wallet Viewer</title>
 </head>
 <body>
-    <div class="wallet">
-        <h2>TRC20 Wallet (Simulated)</h2>
-        <div class="balance">{{ balance }} USDT</div>
-        <div>{{ wallet_address }}</div>
-        <p class="warning">⚠️ Simulated balance. This is not on the real blockchain.</p>
-    </div>
+  <h1>Welcome to TRC20 Wallet Viewer</h1>
+  <p>Wallet: {{ wallet_address }}</p>
+  <p>Balance: {{ balance }} USDT</p>
 </body>
 </html>
